@@ -43,7 +43,7 @@ const data = [
 
       <div class="grid gap-4 md:grid-cols-3 h-full">
         <GCard title="Tendencia Mensual" class="md:col-span-2">
-          <div class="h-[300px] w-full mt-4">
+          <div class="h-fit w-full mt-4">
             <BarChart :data="data" index="name" :categories="['nps']" :colors="['var(--primary)']" :rounded-corners="4" />
           </div>
         </GCard>

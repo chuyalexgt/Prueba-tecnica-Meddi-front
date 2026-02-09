@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { BarChart } from '@/components/ui/chart-bar'
+import { BarChart } from '@/components/ui/chart-bar';
 
 const data = [
   { team: 'Ventas', safety: 7.5 },
@@ -35,7 +35,7 @@ const data = [
 
       <div class="grid gap-4 md:grid-cols-2">
         <GCard title="Seguridad por Departamento">
-          <div class="h-[300px] w-full mt-4">
+          <div class="h-fit w-full mt-4">
              <BarChart :data="data" index="team" :categories="['safety']" :colors="['var(--chart-3)']" />
           </div>
         </GCard>

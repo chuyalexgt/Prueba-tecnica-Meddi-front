@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { BarChart } from '@/components/ui/chart-bar'
+import { BarChart } from '@/components/ui/chart-bar';
 
 const data = [
   { range: '0-40h', employees: 45 },
@@ -38,7 +38,7 @@ const data = [
 
       <div class="grid gap-4 md:grid-cols-2">
         <GCard title="Distribución de Carga Horaria">
-          <div class="h-[300px] w-full mt-4">
+          <div class="h-fit w-full mt-4">
              <BarChart :data="data" index="range" :categories="['employees']" :colors="['var(--chart-5)']" />
           </div>
         </GCard>
