@@ -12,6 +12,12 @@ Desarrollar una interfaz de usuario para una aplicación web que permita gestion
 - Agrupar tareas por prioridad (Una lista por prioridad)
 - Filtrar tareas por fecha de creación
 - Ordenar tareas por fecha de creación
+- Buscar tareas por titulo
+- Mostrar la cantidad de tareas por prioridad (Gráfica de tipo dona, barra, etc.)
+- Mostrar la cantidad de tareas por estado (Gráfica de tipo dona, barra, etc.)
+- Mostrar ranking de los tres días de la semana con mas tareas CREADAS
+- Mostrar ranking de los tres días de la semana con mas tareas COMPLETADAS
+
 
 Las tareas creadas deben tener como mínimo los siguientes campos:
 - id (_id de MongoDB)
@@ -58,7 +64,7 @@ Debes trabajar partiendo de la ruta /tasksManager
 
 - Uso de lucide icons
 - Uso de shadcn ui
-- Dominio de nuxt 4
+- Dominio de nuxt 4 (Aprovechar las funcionalidades que vienen configuradas en el proyecto)
 - Uso avanzado de typescript
 
 ## Consideraciones
