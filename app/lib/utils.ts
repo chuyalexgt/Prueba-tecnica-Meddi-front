@@ -5,3 +5,18 @@ import { twMerge } from "tailwind-merge"
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
+
+//Helper para traducir los dias al español
+export function translateDay(day: string) {
+  const daysMap: Record<string, string> = {
+    Monday: "Lunes",
+    Tuesday: "Martes",
+    Wednesday: "Miércoles",
+    Thursday: "Jueves",
+    Friday: "Viernes",
+    Saturday: "Sábado",
+    Sunday: "Domingo",
+  };
+
+  return daysMap[day] || day;
+}
